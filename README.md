@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Todo Application (React - Spring Boot)
+A simple full stack project using React and Spring boot demonstrating simple RESTful web services in todo operations.
+
+## Technologies used
+- Front End: React
+- Back End: Spring Boot, MySQL 
+>>>>>>> 130ce77e87ccba5c214e4195cafbb1e66f3c0e02
