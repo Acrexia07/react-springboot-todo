@@ -6,11 +6,11 @@ function CounterContainer () {
 
     const [count, setCount] = useState(0);
 
-    function incrementMethodParent (by) {
+    function incrementMethod(by) {
         setCount(count + by)
     }
 
-    function decrementMethodParent (by) {
+    function decrementMethod (by) {
         setCount(count - by)
     }
 
@@ -23,14 +23,14 @@ function CounterContainer () {
             <h1>Counter</h1>
             <span className="totalCount">{count}</span>
             <CounterButton by={1} 
-                incrementMethodParent={incrementMethodParent}
-                decrementMethodParent={decrementMethodParent}/>
+                incrementMethod={incrementMethod}
+                decrementMethod={decrementMethod}/>
             <CounterButton by={2} 
-                incrementMethodParent={incrementMethodParent}
-                decrementMethodParent={decrementMethodParent}/>
+                incrementMethod={incrementMethod}
+                decrementMethod={decrementMethod}/>
             <CounterButton by={5} 
-                incrementMethodParent={incrementMethodParent}
-                decrementMethodParent={decrementMethodParent}/>
+                incrementMethod={incrementMethod}
+                decrementMethod={decrementMethod}/>
             <button className="resetButton" 
                     onClick={resetCountParent} >  
             RESET

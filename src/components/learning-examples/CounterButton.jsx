@@ -1,29 +1,16 @@
 import { PropTypes } from 'prop-types'
 
-function CounterButton ( {by, incrementMethodParent, decrementMethodParent} ) {
-    
-    function incrementMethod (value) {
-        return () => {
-            incrementMethodParent(by)
-
-        }
-    }
-
-    function decrementMethod (value) {
-        return () => {
-            decrementMethodParent(by)
-        }
-    }
+function CounterButton ( {by, incrementMethod, decrementMethod} ) {
 
     return (
         <div className="counter">
             <div className="buttons">
                 <button className="counterButton" 
-                        onClick={incrementMethod(by)} >  
+                        onClick={() =>  incrementMethod(by)} >  
                 +{by}
                 </button>
                 <button className="counterButton" 
-                        onClick={decrementMethod(by)} >  
+                        onClick={() =>  decrementMethod(by)} >  
                 -{by}
                 </button>
             </div>
